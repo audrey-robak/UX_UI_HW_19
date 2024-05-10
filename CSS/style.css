@@ -1,0 +1,82 @@
+.flexContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 33%;
+    padding: 20px;
+    margin: 20px;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 20px;;
+}
+
+body {
+    background-image: url(/CSS/Images/background\ image2.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.Projects {
+    font-size: 20px;
+}
+
+.mySkills {
+    font-size: 30px;
+}
+
+.myWork {
+    font-size: 30px;
+}
+button {
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    background-color: #DAF7DC;
+    border-radius: 10px;
+    display: flex;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px; /* Half of width */
+    margin-left: -60px; /* Half of height */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+@media only screen and (max-width: 700px) {
+    .flexContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        grid-column-gap: 20px; }
+    }
+    .workGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+        grid-column-gap: 20px;
+    }
+    .myWork {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+        grid-column-gap: 20px;
+    }
+
+
